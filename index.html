@@ -10,6 +10,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/popper.min.js"></script>
         <script src="resources/js/bootstrap.min.js"></script>
         <script src="javascript.js"></script>
+        <script src="newsAPI.js"></script>
+        <!-- <script src="spotifyAPI.js"></script> -->
     </head>
     <body>
 
@@ -32,31 +34,28 @@
                             <div class="col border border-dark m-3">
                                 <h3>Weather forecast</h3>
                                 <p class="font-italic font-weight-light">It's going to be a great day!</p>
-                                    <input type="text" id="city" name="city" class="m-1 text-center" placeholder="Enter city name here:"></input><br>
-                                    <input id="button" type="submit" value="Submit"></input> <br>
+                                    <input type="text" id="city" name="city" class="text-center" placeholder="Enter city name here:"></input><br>
+                                    <input class="button m-1" id="button" type="submit" value="Submit"></input> <br>
                                 <img class="icon"></img>
                                 <p class="weather"></p>
                                 <p class="temp"></p>
+
+                                <!--Placeholder for spotify API-->
+                                <iframe src="https://open.spotify.com/embed/track/0eEgMbSzOHmkOeVuNC3E0k" width="250" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
                             </div>
                             <!------------------------------------------->
                             <div class="col border border-dark m-3 text-left">
-                                <h3>News flash!</h3>
-                                <p class="font-italic font-weight-light">BTS's KPOP stan 'Jimin' has died due to corona</p>
+                                <h3>News Flash!</h3>
+                                <h3 class="newsTitle"></h3>
+                                <p class="newsDesc font-italic font-weight-light"></p>
+                                <input class="button m-1" id="newsButton" type="submit" value="Get News">
 
-                                <div class="text-cursive p-2">
-                                    <p>BTS 'Bungo time sisters', are now stunned to hear that they
-                                       have lost their precious member who went by the name 'Jimin'.
-                                       Kpop stans around the world are storming the white house to
-                                       demand that they revive the now deceased korean boy.
-                                       Obama has been enjoying being ran down and targeted by
-                                       the insane horde of teenage girls trying to assasinate him.
-                                       the court of law has found the political movement of: 'STJ'
-                                       (Short for: 'summon the Jimin') guilty of accidental mass murder
-                                       due to running aimlessly through populated areas while chanting
-                                       their own made up korean war cries, all of this because of a mannequin</p>
-
-                                       <p>Documented by: Machmud allah Achmed Echmed</p>
+                                <div class="text-cursive m-1">
+                                    <img class="newsIcon"></img>
+                                    <p class="newsPublished"></p>
                                 </div>
+
                             </div>
                         </div>
                     </div>

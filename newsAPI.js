@@ -1,0 +1,22 @@
+$(document).ready(function(){
+    $("#newsButton").click(function(){
+
+        $.ajax({
+            type: "GET",
+            url: "http://newsapi.org/v2/everything?q=bitcoin&from=2020-02-11&sortBy=publishedAt&apiKey=6e050068da91459bb037fe284d88d058",
+            success: function(newsData) {
+                console.log(newsData);
+
+                var newsTitle = newsData.articles[0].title;
+                var newsDesc = newsData.articles[0].description;
+                var newsIcon = newsData.articles[0].urlToImage;
+                var newsPublished = newsData.articles[0].publishedAt;
+
+                $(".newsTitle").append(newsTitle);
+                $(".newsDesc").append(newsDesc);
+                $(".newsIcon").attr('src', newsIcon);
+                $(".newsPublished").append(newsPublished);
+            }
+        });
+    });
+});
