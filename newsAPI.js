@@ -3,7 +3,7 @@ $(document).ready(function(){
 
         $.ajax({
             type: "GET",
-            url: "http://newsapi.org/v2/everything?q=bitcoin&from=2020-02-11&sortBy=publishedAt&apiKey=6e050068da91459bb037fe284d88d058",
+            url: "http://newsapi.org/v2/everything?q=bitcoin&from=2020-02-11&sortBy=publishedAt&apiKey=2f36de668b504d8aaabf89aad015cf1b",
             success: function(newsData) {
                 console.log(newsData);
 
