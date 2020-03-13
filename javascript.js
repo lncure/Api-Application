@@ -12,12 +12,6 @@ $("#weatherButton").click(function(){
             //Datetracking
             var i = 1;
 
-            //Weathertracking
-            var j = 0;
-
-            //Icontracking
-            var l = 0;
-
             var icon = "http://api.openweathermap.org/img/w/" + weatherData.list[0].weather[0].icon + ".png";
             var temp = Math.floor(weatherData.list[0].main.temp) + "°F";
             var weather = weatherData.list[0].weather[0].main;
